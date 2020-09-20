@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: hsl(0, 0%, 98%);
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+  }
+  .four-card-introduction {
+    margin: 2rem auto;
+    text-align: center;
+  }
+  h2.light {
+    font-weight: 200;
+    color: hsl(229, 6%, 66%);
+  }
+  h2.bold {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+    margin-top: 0.5rem;
+  }
+  .four-card-introduction h4 {
+    margin-top: 0.6rem;
+    color: hsl(229, 6%, 66%);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4rem;
+  }
+  .four-cards {
+    margin: 5rem auto;
+  }
+  .four-cards .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .col-4 .inner {
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .card {
+    padding: 2rem 1.5rem 1rem 1.5rem;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 1rem;
+    /* box-shadow: 2px solid hsl(229, 6%, 66%); */
+  }
+  .card-1 {
+    margin-left: 8rem;
+    border-top: 4px solid hsl(180, 62%, 55%);
+  }
+  .card-2 {
+    border-top: 4px solid hsl(0, 78%, 62%);
+  }
+  .card-3 {
+    border-top: 4px solid hsl(34, 97%, 64%);
+  }
+  .card-4 {
+    margin-right: 8rem;
+    border-top: 4px solid hsl(212, 86%, 64%);
+  }
+  .card-header {
+    margin-left: 1.5rem;
+  }
+  .card-header h3 {
+    color: hsl(234, 12%, 34%);
+  }
+  .card-header h5 {
+    color: hsl(229, 6%, 66%);
+    margin-top: 0.8rem;
+    font-size: 15px;
+    line-height: 1.4rem;
+  }
+  .card-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 3rem;
+  }
+  
+  @media only screen and (max-width: 1100px) {
+    .four-cards {
+      padding: 0 1rem;
+    }
+    .card-1 {
+      margin-left: 0;
+      border-top: 3px solid hsl(180, 62%, 55%);
+    }
+    .card-4 {
+      margin-right: 0;
+      border-top: 3px solid hsl(212, 86%, 64%);
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .four-cards .row {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .card {
+      margin: 1.6em;
+    }
+  }
+  
